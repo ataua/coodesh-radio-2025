@@ -1,7 +1,12 @@
-const Content = ({ children }: { children: React.ReactNode }) => {
+import { RadioContext } from "@/context/RadioContext";
+import { useContext } from "react";
+
+const Content = () => {
+    const { radio } = useContext(RadioContext);
+
     return (<>
-        <div>Content</div>
-        {children}
+        <p className='text-2xl text-white'>{radio}</p>
+
     </>)
 }
 
