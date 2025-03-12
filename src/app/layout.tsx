@@ -31,15 +31,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body>
-        <div
-          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-        >
-          <RadioProvider>
-            {children}
-          </RadioProvider>
-        </div>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        <RadioProvider>
+          {children}
+        </RadioProvider>
       </body>
-    </html>
+    </html >
   );
 }
